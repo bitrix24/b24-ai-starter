@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] اختبار التطبيق"
+      },
+      "menu": {
+        "main": "فتح"
+      },
+      "message": {
+        "title": "مرحبًا!",
+        "line1": "لنختبر عمل التطبيق في Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "تثبيت التطبيق"
+      },
+      "ui": {
+        "title": "تثبيت التطبيق"
+      },
+      "step": {
+        "init": {
+          "caption": "يجب الانتظار قليلاً..."
+        },
+        "demo": {
+          "caption": "أمثلة..."
+        },
+        "events": {
+          "caption": "الأحداث..."
+        },
+        "placement": {
+          "caption": "الودجات..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "السكربتات الخادمية..."
+        },
+        "finish": {
+          "caption": "إنهاء"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "إعدادات التطبيق",
+        "description": "مثال للعمل مع إعدادات التطبيق."
+      },
+      "actions": {
+        "save": "حفظ",
+        "cancel": "إلغاء"
+      },
+      "error": {
+        "title": "خطأ",
+        "notAdmin": "يمكن للمسؤول فقط تعديل إعدادات التطبيق."
+      },
+      "option": {
+        "history": {
+          "title": "سجل العمليات",
+          "alert": "عرض عمل الخاصية. بالقياس، يمكن ضبط أي خصائص للتطبيق.",
+          "property_1": "عدد أيام تخزين السجل",
+          "property_2": "عنوان الحدث",
+          "property_bool": "اتجاه تصاعدي؟"
+        },
+        "present": {
+          "title": "سجل الأحداث",
+          "alert": "يظهر كل دخول للموظفين في سجل الأحداث. يمكنك دائمًا التحقق من الذي دخل ومتى ومن أي عناوين IP إلى Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "عرض العمل مع الخاصية.",
+        "description": "بالقياس، يمكن ضبط أي خصائص للتطبيق"
+      },
+      "field": {
+        "label": "مثال لحقل",
+        "description": "تغيير القيمة يؤدي إلى إعادة بناء الرسم البياني",
+        "hint": "اتجاه"
+      },
+      "action": {
+        "settings": "فتح الإعدادات"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "التضمين في بطاقة الصفقة",
+        "description": "عرض."
+      },
+      "action": "خلط"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "حالة الخادم الخلفي",
+      "description": {
+        "healthy": "الخادم الخلفي سليم ({msg})",
+        "checking": "جاري فحص صلاحية الخادم الخلفي...",
+        "error": "خطأ في الاتصال الداخلي"
+      },
+      "action": "تحديث الحالة"
+    }
+  }
+}

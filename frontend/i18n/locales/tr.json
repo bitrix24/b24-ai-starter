@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Uygulama Testi"
+      },
+      "menu": {
+        "main": "Aç"
+      },
+      "message": {
+        "title": "Merhaba!",
+        "line1": "Bitrix24'te uygulamanın çalışmasını test edelim."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Uygulama Kurulumu"
+      },
+      "ui": {
+        "title": "Uygulama Kurulumu"
+      },
+      "step": {
+        "init": {
+          "caption": "Biraz beklemek gerekiyor..."
+        },
+        "demo": {
+          "caption": "Örnekler..."
+        },
+        "events": {
+          "caption": "Olaylar..."
+        },
+        "placement": {
+          "caption": "Widget'lar..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Sunucu Taraflı Scriptler..."
+        },
+        "finish": {
+          "caption": "Tamamlama"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Uygulama Ayarları",
+        "description": "Uygulama ayarlarıyla çalışma örneği."
+      },
+      "actions": {
+        "save": "Kaydet",
+        "cancel": "İptal"
+      },
+      "error": {
+        "title": "Hata",
+        "notAdmin": "Yalnızca yönetici uygulama ayarlarını düzenleyebilir."
+      },
+      "option": {
+        "history": {
+          "title": "İşlem Geçmişi",
+          "alert": "Özellikle çalışmanın gösterimi. Benzer şekilde, uygulamanın herhangi bir özelliği yapılandırılabilir.",
+          "property_1": "Geçmiş kaç gün saklansın",
+          "property_2": "Olay başlığı",
+          "property_bool": "Yükselen trend?"
+        },
+        "present": {
+          "title": "Olay Günlüğü",
+          "alert": "Personelin her girişi Olay Günlüğü'nde görüntülenir. Kimin, ne zaman ve hangi IP adreslerinden Bitrix24'e giriş yaptığını her zaman kontrol edebilirsiniz."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Özellikle çalışmanın gösterimi.",
+        "description": "Benzer şekilde, uygulamanın herhangi bir özelliği yapılandırılabilir"
+      },
+      "field": {
+        "label": "Örnek alan",
+        "description": "Değerin değişmesi grafiğin yeniden oluşturulmasına neden olur",
+        "hint": "Trend"
+      },
+      "action": {
+        "settings": "Ayarları aç"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Kart işlemine gömme",
+        "description": "Gösterim."
+      },
+      "action": "Karıştır"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Backend Durumu",
+      "description": {
+        "healthy": "Backend sağlıklı ({msg})",
+        "checking": "Backend çalışabilirliği kontrol ediliyor...",
+        "error": "Dahili bağlantı hatası"
+      },
+      "action": "Durumu güncelle"
+    }
+  }
+}

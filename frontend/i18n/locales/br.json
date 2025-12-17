@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Teste do aplicativo"
+      },
+      "menu": {
+        "main": "Abrir"
+      },
+      "message": {
+        "title": "Olá!",
+        "line1": "Vamos testar o funcionamento do aplicativo no Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Instalação do aplicativo"
+      },
+      "ui": {
+        "title": "Instalação do aplicativo"
+      },
+      "step": {
+        "init": {
+          "caption": "Precisa aguardar um pouco..."
+        },
+        "demo": {
+          "caption": "Exemplos..."
+        },
+        "events": {
+          "caption": "Eventos..."
+        },
+        "placement": {
+          "caption": "Widgets..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Scripts do servidor..."
+        },
+        "finish": {
+          "caption": "Conclusão"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Configurações do aplicativo",
+        "description": "Exemplo de trabalho com as configurações do aplicativo."
+      },
+      "actions": {
+        "save": "Salvar",
+        "cancel": "Cancelar"
+      },
+      "error": {
+        "title": "Erro",
+        "notAdmin": "Apenas um administrador pode editar as configurações do aplicativo."
+      },
+      "option": {
+        "history": {
+          "title": "Histórico de operações",
+          "alert": "Demonstração do trabalho com a propriedade. Por analogia, é possível configurar qualquer propriedade do aplicativo.",
+          "property_1": "Por quantos dias manter o histórico",
+          "property_2": "Título do evento",
+          "property_bool": "Tendência de alta?"
+        },
+        "present": {
+          "title": "Registro de eventos",
+          "alert": "Cada login dos colaboradores é exibido no Registro de eventos. Você sempre pode verificar quem, quando e de quais endereços IP acessou o Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demonstração do trabalho com a propriedade.",
+        "description": "Por analogia, é possível configurar qualquer propriedade do aplicativo"
+      },
+      "field": {
+        "label": "Exemplo de campo",
+        "description": "A alteração do valor leva à reconstrução do gráfico",
+        "hint": "Tendência"
+      },
+      "action": {
+        "settings": "Abrir configurações"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Incorporação no cartão do negócio",
+        "description": "Demonstração."
+      },
+      "action": "Embaralhar"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Status do backend",
+      "description": {
+        "healthy": "Backend saudável ({msg})",
+        "checking": "Verificando a operacionalidade do backend...",
+        "error": "Erro de conexão interna"
+      },
+      "action": "Atualizar status"
+    }
+  }
+}

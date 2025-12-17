@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Test de l'application"
+      },
+      "menu": {
+        "main": "Ouvrir"
+      },
+      "message": {
+        "title": "Bonjour !",
+        "line1": "Testons le fonctionnement de l'application dans Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Installation de l'application"
+      },
+      "ui": {
+        "title": "Installation de l'application"
+      },
+      "step": {
+        "init": {
+          "caption": "Veuillez patienter un instant..."
+        },
+        "demo": {
+          "caption": "Exemples..."
+        },
+        "events": {
+          "caption": "Événements..."
+        },
+        "placement": {
+          "caption": "Widgets..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Scripts serveur..."
+        },
+        "finish": {
+          "caption": "Finalisation"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Paramètres de l'application",
+        "description": "Exemple de travail avec les paramètres de l'application."
+      },
+      "actions": {
+        "save": "Sauvegarder",
+        "cancel": "Annuler"
+      },
+      "error": {
+        "title": "Erreur",
+        "notAdmin": "Seul un administrateur peut modifier les paramètres de l'application."
+      },
+      "option": {
+        "history": {
+          "title": "Historique des opérations",
+          "alert": "Démonstration du travail avec la propriété. De la même manière, vous pouvez configurer n'importe quelle propriété de l'application.",
+          "property_1": "Nombre de jours pour conserver l'historique",
+          "property_2": "Titre de l'événement",
+          "property_bool": "Tendance haussière ?"
+        },
+        "present": {
+          "title": "Journal des événements",
+          "alert": "Chaque connexion des employés est affichée dans le Journal des événements. Vous pouvez toujours vérifier qui, quand et à partir de quelles adresses IP s'est connecté à Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Démonstration du travail avec la propriété.",
+        "description": "De la même manière, vous pouvez configurer n'importe quelle propriété de l'application"
+      },
+      "field": {
+        "label": "Exemple de champ",
+        "description": "Changer la valeur entraîne une reconstruction du graphique",
+        "hint": "Tendance"
+      },
+      "action": {
+        "settings": "Ouvrir les paramètres"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Intégration dans la fiche de transaction",
+        "description": "Démonstration."
+      },
+      "action": "Mélanger"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Statut du backend",
+      "description": {
+        "healthy": "Le backend est sain ({msg})",
+        "checking": "Vérification de l'état du backend...",
+        "error": "Erreur de connexion interne"
+      },
+      "action": "Actualiser le statut"
+    }
+  }
+}

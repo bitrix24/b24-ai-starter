@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Ujian aplikasi"
+      },
+      "menu": {
+        "main": "Buka"
+      },
+      "message": {
+        "title": "Helo!",
+        "line1": "Mari uji fungsi aplikasi dalam Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Pemasangan aplikasi"
+      },
+      "ui": {
+        "title": "Pemasangan aplikasi"
+      },
+      "step": {
+        "init": {
+          "caption": "Perlu tunggu sebentar..."
+        },
+        "demo": {
+          "caption": "Contoh..."
+        },
+        "events": {
+          "caption": "Peristiwa..."
+        },
+        "placement": {
+          "caption": "Widget..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Skrip pelayan..."
+        },
+        "finish": {
+          "caption": "Penamatan"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Tetapan aplikasi",
+        "description": "Contoh kerja dengan tetapan aplikasi."
+      },
+      "actions": {
+        "save": "Simpan",
+        "cancel": "Batal"
+      },
+      "error": {
+        "title": "Ralat",
+        "notAdmin": "Hanya pentadbir yang boleh mengedit tetapan aplikasi."
+      },
+      "option": {
+        "history": {
+          "title": "Sejarah operasi",
+          "alert": "Demonstrasi kerja dengan sifat. Secara analogi, sebarang sifat aplikasi boleh dikonfigurasi.",
+          "property_1": "Berapa hari untuk menyimpan sejarah",
+          "property_2": "Tajuk peristiwa",
+          "property_bool": "Trend menaik?"
+        },
+        "present": {
+          "title": "Log peristiwa",
+          "alert": "Setiap kemasukan kakitangan dipaparkan dalam Log Peristiwa. Anda sentiasa boleh menyemak siapa, bila dan dari alamat IP mana yang mengakses Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demonstrasi kerja dengan sifat.",
+        "description": "Secara analogi, sebarang sifat aplikasi boleh dikonfigurasi"
+      },
+      "field": {
+        "label": "Contoh medan",
+        "description": "Perubahan nilai menyebabkan graf dibina semula",
+        "hint": "Trend"
+      },
+      "action": {
+        "settings": "Buka tetapan"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Benamkan dalam kad tawaran",
+        "description": "Demonstrasi."
+      },
+      "action": "Kacau"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Status belakang",
+      "description": {
+        "healthy": "Belakang sihat ({msg})",
+        "checking": "Menyemak kebolehoperasian belakang...",
+        "error": "Ralat sambungan dalaman"
+      },
+      "action": "Kemas kini status"
+    }
+  }
+}

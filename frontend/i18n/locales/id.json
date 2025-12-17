@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Pengujian aplikasi"
+      },
+      "menu": {
+        "main": "Buka"
+      },
+      "message": {
+        "title": "Halo!",
+        "line1": "Mari kita uji cara kerja aplikasi di Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Pemasangan aplikasi"
+      },
+      "ui": {
+        "title": "Pemasangan aplikasi"
+      },
+      "step": {
+        "init": {
+          "caption": "Harap tunggu sebentar..."
+        },
+        "demo": {
+          "caption": "Contoh..."
+        },
+        "events": {
+          "caption": "Peristiwa..."
+        },
+        "placement": {
+          "caption": "Widget..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Skrip server..."
+        },
+        "finish": {
+          "caption": "Penyelesaian"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Pengaturan aplikasi",
+        "description": "Contoh cara kerja dengan pengaturan aplikasi."
+      },
+      "actions": {
+        "save": "Simpan",
+        "cancel": "Batal"
+      },
+      "error": {
+        "title": "Kesalahan",
+        "notAdmin": "Hanya administrator yang dapat mengedit pengaturan aplikasi."
+      },
+      "option": {
+        "history": {
+          "title": "Riwayat operasi",
+          "alert": "Demonstrasi cara kerja dengan properti. Dengan analogi yang sama, Anda dapat mengonfigurasi properti aplikasi apa pun.",
+          "property_1": "Berapa hari riwayat disimpan",
+          "property_2": "Judul peristiwa",
+          "property_bool": "Tren naik?"
+        },
+        "present": {
+          "title": "Jurnal Peristiwa",
+          "alert": "Setiap masuknya karyawan ditampilkan di Jurnal Peristiwa. Anda selalu dapat memeriksa siapa, kapan, dan dari alamat IP mana yang masuk ke Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demonstrasi cara kerja dengan properti.",
+        "description": "Dengan analogi yang sama, Anda dapat mengonfigurasi properti aplikasi apa pun"
+      },
+      "field": {
+        "label": "Contoh bidang",
+        "description": "Mengubah nilai menyebabkan grafik dibangun ulang",
+        "hint": "Tren"
+      },
+      "action": {
+        "settings": "Buka pengaturan"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Sisipan ke kartu kesepakatan",
+        "description": "Demonstrasi."
+      },
+      "action": "Acak"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Status backend",
+      "description": {
+        "healthy": "Backend sehat ({msg})",
+        "checking": "Memeriksa kesehatan backend...",
+        "error": "Kesalahan koneksi internal"
+      },
+      "action": "Perbarui status"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] 應用程式測試"
+      },
+      "menu": {
+        "main": "開啟"
+      },
+      "message": {
+        "title": "你好！",
+        "line1": "讓我們來測試 Bitrix24 中的應用程式運作。"
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "應用程式安裝"
+      },
+      "ui": {
+        "title": "應用程式安裝"
+      },
+      "step": {
+        "init": {
+          "caption": "需要稍等一下…"
+        },
+        "demo": {
+          "caption": "範例…"
+        },
+        "events": {
+          "caption": "事件…"
+        },
+        "placement": {
+          "caption": "小工具…"
+        },
+        "userFields": {
+          "caption": "Uf…"
+        },
+        "crm": {
+          "caption": "CRM…"
+        },
+        "serverSide": {
+          "caption": "伺服器端腳本…"
+        },
+        "finish": {
+          "caption": "完成"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "應用程式設定",
+        "description": "應用程式設定運作範例。"
+      },
+      "actions": {
+        "save": "儲存",
+        "cancel": "取消"
+      },
+      "error": {
+        "title": "錯誤",
+        "notAdmin": "只有管理員可以編輯應用程式設定。"
+      },
+      "option": {
+        "history": {
+          "title": "操作歷史",
+          "alert": "屬性運作示範。依此類推，可以設定應用程式的任何屬性。",
+          "property_1": "歷史記錄保留天數",
+          "property_2": "事件標題",
+          "property_bool": "上升趨勢？"
+        },
+        "present": {
+          "title": "事件日誌",
+          "alert": "每位員工的登入都會顯示在事件日誌中。您可以隨時檢查誰在何時從哪些 IP 位址登入 Bitrix24。"
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "屬性運作示範。",
+        "description": "依此類推，可以設定應用程式的任何屬性"
+      },
+      "field": {
+        "label": "範例欄位",
+        "description": "變更值將導致圖表重建",
+        "hint": "趨勢"
+      },
+      "action": {
+        "settings": "開啟設定"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "嵌入交易卡",
+        "description": "示範。"
+      },
+      "action": "隨機排序"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "後端狀態",
+      "description": {
+        "healthy": "後端正常 ({msg})",
+        "checking": "正在檢查後端可用性…",
+        "error": "內部連線錯誤"
+      },
+      "action": "更新狀態"
+    }
+  }
+}

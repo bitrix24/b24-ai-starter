@@ -1,0 +1,191 @@
+services:
+  # (~) Database
+  database:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${DB_NAME:-appdb}
+      POSTGRES_USER: ${DB_USER:-appuser}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-apppass}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infrastructure/database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./logs/postgres:/var/log/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-appuser} -d ${DB_NAME:-appdb}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal-net
+
+  # (~) RabbitMQ
+  rabbitmq:
+    profiles: ["queue"]
+    image: rabbitmq:3.13-management-alpine
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-queue_user}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-queue_password}
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+      - ./logs/rabbitmq:/var/log/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal-net
+
+  # (~) Frontend
+  frontend:
+    profiles: [ "frontend" ]
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: ${BUILD_TARGET:-dev}
+    env_file: .env
+    environment:
+      NUXT_PUBLIC_APP_URL: ${VIRTUAL_HOST}
+      NUXT_PUBLIC_API_URL: ${VIRTUAL_HOST}
+      HTTP: frontend:3000
+    expose:
+      - '3000'
+    volumes:
+      - ./frontend:/app
+    networks:
+      - internal-net
+
+  # (~) Ngrok - public tunnel for frontend
+  ngrok:
+    profiles: ["ngrok"]
+    container_name: ngrokFront
+    image: ngrok/ngrok:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN}
+    command: ["http", "frontend:3000"]
+    depends_on:
+      - frontend
+    ports:
+      - "4040:4040"
+    networks:
+      - internal-net
+
+  # (~) API servers (selected via profile)
+  api-php:
+    profiles: ["php"]
+    build:
+      context: ./backends/php
+      dockerfile: docker/php-fpm/Dockerfile
+    container_name: api
+    env_file: .env
+    environment:
+      DB_HOST: database
+      NODE_ENV: ${NODE_ENV:-development}
+      NUXT_PUBLIC_API_URL: ${VIRTUAL_HOST}
+      BITRIX24_PHP_SDK_APPLICATION_CLIENT_ID: ${CLIENT_ID:-enter_your_b24_app_client_id}
+      BITRIX24_PHP_SDK_APPLICATION_CLIENT_SECRET: ${CLIENT_SECRET:-enter_your_b24_app_secret}
+      BITRIX24_PHP_SDK_APPLICATION_SCOPE: ${SCOPE:-enter_your_b24_app_scope}
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backends/php/:/var/www
+      - ./logs/php:/var/log/php
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - internal-net
+
+  php-cli:
+    profiles: ["php", "php-cli"]
+    build:
+      context: ./backends/php
+      dockerfile: docker/php-cli/Dockerfile
+    container_name: php-cli
+    env_file: .env
+    environment:
+      DB_HOST: database
+      NODE_ENV: ${NODE_ENV:-development}
+      NUXT_PUBLIC_API_URL: ${VIRTUAL_HOST}
+      BITRIX24_PHP_SDK_APPLICATION_CLIENT_ID: ${CLIENT_ID:-enter_your_b24_app_client_id}
+      BITRIX24_PHP_SDK_APPLICATION_CLIENT_SECRET: ${CLIENT_SECRET:-enter_your_b24_app_secret}
+      BITRIX24_PHP_SDK_APPLICATION_SCOPE: ${SCOPE:-enter_your_b24_app_scope}
+    volumes:
+      - ./backends/php/:/var/www
+      - ./logs/php:/var/log/php
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - internal-net
+    stdin_open: true
+    tty: true
+
+
+  api-python:
+    profiles: ["python"]
+    build:
+      context: ./backends/python
+      dockerfile: api/Dockerfile
+      target: ${BUILD_TARGET:-dev}
+    container_name: api
+    env_file: .env
+    environment:
+      DB_HOST: database
+      PORT: 8000
+      NUXT_PUBLIC_API_URL: ${VIRTUAL_HOST}
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backends/python/api:/var/www/api
+      - ./logs/python:/var/log/python
+    depends_on:
+      - database
+    networks:
+      - internal-net
+
+  api-node:
+    profiles: ["node"]
+    container_name: api
+    build:
+      context: ./backends/node/api
+      dockerfile: Dockerfile
+      target: ${BUILD_TARGET:-dev}
+    env_file: .env
+    environment:
+      DB_HOST: database
+      NODE_ENV: ${NODE_ENV:-development}
+      NUXT_PUBLIC_API_URL: ${VIRTUAL_HOST}
+      PORT: 8000
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backends/node/api:/app
+      - ./logs/node:/var/log/node
+    depends_on:
+      - database
+    networks:
+      - internal-net
+
+networks:
+  internal-net:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  rabbitmq_data:

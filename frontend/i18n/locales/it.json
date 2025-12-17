@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Test dell'applicazione"
+      },
+      "menu": {
+        "main": "Apri"
+      },
+      "message": {
+        "title": "Ciao!",
+        "line1": "Testiamo il funzionamento dell'applicazione in Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Installazione dell'applicazione"
+      },
+      "ui": {
+        "title": "Installazione dell'applicazione"
+      },
+      "step": {
+        "init": {
+          "caption": "Bisogna aspettare un po'..."
+        },
+        "demo": {
+          "caption": "Esempi..."
+        },
+        "events": {
+          "caption": "Eventi..."
+        },
+        "placement": {
+          "caption": "Widget..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Script lato server..."
+        },
+        "finish": {
+          "caption": "Completamento"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Impostazioni dell'applicazione",
+        "description": "Esempio di lavoro con le impostazioni dell'applicazione."
+      },
+      "actions": {
+        "save": "Salva",
+        "cancel": "Annulla"
+      },
+      "error": {
+        "title": "Errore",
+        "notAdmin": "Solo l'amministratore può modificare le impostazioni dell'applicazione."
+      },
+      "option": {
+        "history": {
+          "title": "Cronologia operazioni",
+          "alert": "Dimostrazione del lavoro con la proprietà. Analogamente, è possibile configurare qualsiasi proprietà dell'applicazione.",
+          "property_1": "Per quanti giorni conservare la cronologia",
+          "property_2": "Titolo dell'evento",
+          "property_bool": "Trend ascendente?"
+        },
+        "present": {
+          "title": "Registro eventi",
+          "alert": "Ogni accesso dei dipendenti viene visualizzato nel Registro eventi. Puoi sempre verificare chi, quando e da quali indirizzi IP ha effettuato l'accesso a Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Dimostrazione del lavoro con la proprietà.",
+        "description": "Analogamente, è possibile configurare qualsiasi proprietà dell'applicazione"
+      },
+      "field": {
+        "label": "Esempio di campo",
+        "description": "La modifica del valore porta alla ricostruzione del grafico",
+        "hint": "Trend"
+      },
+      "action": {
+        "settings": "Apri impostazioni"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Incorpora nella scheda dell'affare",
+        "description": "Dimostrazione."
+      },
+      "action": "Mescola"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Stato del backend",
+      "description": {
+        "healthy": "Il backend è sano ({msg})",
+        "checking": "Verifica dello stato operativo del backend...",
+        "error": "Errore di connessione interna"
+      },
+      "action": "Aggiorna stato"
+    }
+  }
+}

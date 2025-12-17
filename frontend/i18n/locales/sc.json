@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] 应用测试"
+      },
+      "menu": {
+        "main": "打开"
+      },
+      "message": {
+        "title": "你好！",
+        "line1": "让我们测试一下Bitrix24中的应用程序运行情况。"
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "应用安装"
+      },
+      "ui": {
+        "title": "应用安装"
+      },
+      "step": {
+        "init": {
+          "caption": "需要稍等片刻..."
+        },
+        "demo": {
+          "caption": "示例..."
+        },
+        "events": {
+          "caption": "事件..."
+        },
+        "placement": {
+          "caption": "小部件..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "服务器端脚本..."
+        },
+        "finish": {
+          "caption": "完成"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "应用设置",
+        "description": "应用设置操作示例。"
+      },
+      "actions": {
+        "save": "保存",
+        "cancel": "取消"
+      },
+      "error": {
+        "title": "错误",
+        "notAdmin": "只有管理员可以编辑应用设置。"
+      },
+      "option": {
+        "history": {
+          "title": "操作历史",
+          "alert": "属性操作演示。按照类似方式可以配置任何应用属性。",
+          "property_1": "历史记录保存天数",
+          "property_2": "事件标题",
+          "property_bool": "上升趋势？"
+        },
+        "present": {
+          "title": "事件日志",
+          "alert": "员工的每次登录都会显示在事件日志中。您随时可以检查谁在何时从哪些IP地址登录了Bitrix24。"
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "属性操作演示。",
+        "description": "按照类似方式可以配置任何应用属性"
+      },
+      "field": {
+        "label": "示例字段",
+        "description": "更改值会导致图表重新构建",
+        "hint": "趋势"
+      },
+      "action": {
+        "settings": "打开设置"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "嵌入交易卡片",
+        "description": "演示。"
+      },
+      "action": "随机排序"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "后端状态",
+      "description": {
+        "healthy": "后端运行正常（{msg}）",
+        "checking": "正在检查后端运行状态...",
+        "error": "内部连接错误"
+      },
+      "action": "更新状态"
+    }
+  }
+}

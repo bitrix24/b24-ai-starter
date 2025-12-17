@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Testowanie aplikacji"
+      },
+      "menu": {
+        "main": "Otwórz"
+      },
+      "message": {
+        "title": "Witaj!",
+        "line1": "Przetestujmy działanie aplikacji w Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Instalacja aplikacji"
+      },
+      "ui": {
+        "title": "Instalacja aplikacji"
+      },
+      "step": {
+        "init": {
+          "caption": "Proszę chwilę poczekać..."
+        },
+        "demo": {
+          "caption": "Przykłady..."
+        },
+        "events": {
+          "caption": "Zdarzenia..."
+        },
+        "placement": {
+          "caption": "Widżety..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Skrypty serwerowe..."
+        },
+        "finish": {
+          "caption": "Zakończenie"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Ustawienia aplikacji",
+        "description": "Przykład pracy z ustawieniami aplikacji."
+      },
+      "actions": {
+        "save": "Zapisz",
+        "cancel": "Anuluj"
+      },
+      "error": {
+        "title": "Błąd",
+        "notAdmin": "Tylko administrator może edytować ustawienia aplikacji."
+      },
+      "option": {
+        "history": {
+          "title": "Historia operacji",
+          "alert": "Demonstracja pracy z właściwością. Analogicznie można skonfigurować dowolne właściwości aplikacji.",
+          "property_1": "Ile dni przechowywać historię",
+          "property_2": "Tytuł zdarzenia",
+          "property_bool": "Trend wzrostowy?"
+        },
+        "present": {
+          "title": "Dziennik zdarzeń",
+          "alert": "Każde logowanie pracowników jest wyświetlane w Dzienniku zdarzeń. Zawsze możesz sprawdzić, kto, kiedy i z jakich adresów IP logował się do Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demonstracja pracy z właściwością.",
+        "description": "Analogicznie można skonfigurować dowolne właściwości aplikacji"
+      },
+      "field": {
+        "label": "Przykładowe pole",
+        "description": "Zmiana wartości prowadzi do przebudowy wykresu",
+        "hint": "Trend"
+      },
+      "action": {
+        "settings": "Otwórz ustawienia"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Wbudowanie w kartę transakcji",
+        "description": "Demonstracja."
+      },
+      "action": "Wymieszaj"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Status backendu",
+      "description": {
+        "healthy": "Backend jest zdrowy ({msg})",
+        "checking": "Sprawdzanie wydajności backendu...",
+        "error": "Błąd połączenia wewnętrznego"
+      },
+      "action": "Odśwież status"
+    }
+  }
+}

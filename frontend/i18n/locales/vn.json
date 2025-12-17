@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Kiểm thử ứng dụng"
+      },
+      "menu": {
+        "main": "Mở"
+      },
+      "message": {
+        "title": "Xin chào!",
+        "line1": "Hãy cùng kiểm thử hoạt động của ứng dụng trong Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Cài đặt ứng dụng"
+      },
+      "ui": {
+        "title": "Cài đặt ứng dụng"
+      },
+      "step": {
+        "init": {
+          "caption": "Cần chờ một chút..."
+        },
+        "demo": {
+          "caption": "Ví dụ..."
+        },
+        "events": {
+          "caption": "Sự kiện..."
+        },
+        "placement": {
+          "caption": "Tiện ích..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Script máy chủ..."
+        },
+        "finish": {
+          "caption": "Hoàn tất"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Cài đặt ứng dụng",
+        "description": "Ví dụ về hoạt động với cài đặt ứng dụng."
+      },
+      "actions": {
+        "save": "Lưu",
+        "cancel": "Hủy"
+      },
+      "error": {
+        "title": "Lỗi",
+        "notAdmin": "Chỉ quản trị viên mới có thể chỉnh sửa cài đặt ứng dụng."
+      },
+      "option": {
+        "history": {
+          "title": "Lịch sử thao tác",
+          "alert": "Trình diễn hoạt động với thuộc tính. Tương tự, bạn có thể cấu hình bất kỳ thuộc tính nào của ứng dụng.",
+          "property_1": "Lưu lịch sử bao nhiêu ngày",
+          "property_2": "Tiêu đề sự kiện",
+          "property_bool": "Xu hướng tăng?"
+        },
+        "present": {
+          "title": "Nhật ký sự kiện",
+          "alert": "Mỗi lần đăng nhập của nhân viên được hiển thị trong Nhật ký sự kiện. Bạn luôn có thể kiểm tra ai, khi nào và từ địa chỉ IP nào đã đăng nhập vào Bitrix24."
+        }
+      }
+    },
+    "uf": {
+      "demo": {
+        "alert": {
+          "title": "Trình diễn hoạt động với thuộc tính.",
+          "description": "Tương tự, bạn có thể cấu hình bất kỳ thuộc tính nào của ứng dụng"
+        },
+        "field": {
+          "label": "Ví dụ về trường",
+          "description": "Thay đổi giá trị dẫn đến việc xây dựng lại biểu đồ",
+          "hint": "Xu hướng"
+        },
+        "action": {
+          "settings": "Mở cài đặt"
+        }
+      }
+    },
+    "placement": {
+      "crm_deal_detail_tab": {
+        "seo": {
+          "title": "Nhúng vào thẻ giao dịch",
+          "description": "Trình diễn."
+        },
+        "action": "Xáo trộn"
+      }
+    },
+    "components": {
+      "backendStatus": {
+        "title": "Trạng thái backend",
+        "description": {
+          "healthy": "Backend khỏe mạnh ({msg})",
+          "checking": "Đang kiểm tra tình trạng backend...",
+          "error": "Lỗi kết nối nội bộ"
+        },
+        "action": "Cập nhật trạng thái"
+      }
+    }
+  }
+}

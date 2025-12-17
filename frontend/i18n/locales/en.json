@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Application Testing"
+      },
+      "menu": {
+        "main": "Open"
+      },
+      "message": {
+        "title": "Hello!",
+        "line1": "Let's test the application's operation in Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Application Installation"
+      },
+      "ui": {
+        "title": "Application Installation"
+      },
+      "step": {
+        "init": {
+          "caption": "Please wait a moment..."
+        },
+        "demo": {
+          "caption": "Examples..."
+        },
+        "events": {
+          "caption": "Events..."
+        },
+        "placement": {
+          "caption": "Widgets..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Server-side scripts..."
+        },
+        "finish": {
+          "caption": "Completion"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Application Settings",
+        "description": "Example of working with application settings."
+      },
+      "actions": {
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "error": {
+        "title": "Error",
+        "notAdmin": "Only an administrator can edit the application settings."
+      },
+      "option": {
+        "history": {
+          "title": "Operation history",
+          "alert": "Demonstration of working with the property. Similarly, any application properties can be configured.",
+          "property_1": "How many days to keep history",
+          "property_2": "Event title",
+          "property_bool": "Upward trend?"
+        },
+        "present": {
+          "title": "Event Log",
+          "alert": "Every employee login is displayed in the Event Log. You can always check who, when, and from which IP addresses logged into Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demonstration of working with the property.",
+        "description": "Similarly, any application properties can be configured"
+      },
+      "field": {
+        "label": "Example field",
+        "description": "Changing the value causes the chart to be rebuilt",
+        "hint": "Trend"
+      },
+      "action": {
+        "settings": "Open settings"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Embedding in the deal card",
+        "description": "Demonstration."
+      },
+      "action": "Shuffle"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Backend Status",
+      "description": {
+        "healthy": "Backend is healthy ({msg})",
+        "checking": "Checking backend health...",
+        "error": "Internal connection error"
+      },
+      "action": "Update status"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Pruebas de la aplicación"
+      },
+      "menu": {
+        "main": "Abrir"
+      },
+      "message": {
+        "title": "¡Hola!",
+        "line1": "Vamos a probar el funcionamiento de la aplicación en Bitrix24."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Instalación de la aplicación"
+      },
+      "ui": {
+        "title": "Instalación de la aplicación"
+      },
+      "step": {
+        "init": {
+          "caption": "Hay que esperar un poco..."
+        },
+        "demo": {
+          "caption": "Ejemplos..."
+        },
+        "events": {
+          "caption": "Eventos..."
+        },
+        "placement": {
+          "caption": "Widgets..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Scripts del servidor..."
+        },
+        "finish": {
+          "caption": "Finalización"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Configuración de la aplicación",
+        "description": "Ejemplo de trabajo con la configuración de la aplicación."
+      },
+      "actions": {
+        "save": "Guardar",
+        "cancel": "Cancelar"
+      },
+      "error": {
+        "title": "Error",
+        "notAdmin": "Solo el administrador puede editar la configuración de la aplicación."
+      },
+      "option": {
+        "history": {
+          "title": "Historial de operaciones",
+          "alert": "Demostración del trabajo con la propiedad. Por analogía, se pueden configurar cualquier propiedad de la aplicación.",
+          "property_1": "Cuántos días guardar el historial",
+          "property_2": "Título del evento",
+          "property_bool": "¿Tendencia alcista?"
+        },
+        "present": {
+          "title": "Registro de eventos",
+          "alert": "Cada entrada de los empleados se muestra en el Registro de eventos. Siempre puedes verificar quién, cuándo y desde qué dirección IP accedió a Bitrix24."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demostración del trabajo con la propiedad.",
+        "description": "Por analogía, se pueden configurar cualquier propiedad de la aplicación"
+      },
+      "field": {
+        "label": "Ejemplo de campo",
+        "description": "Cambiar el valor provoca la reconstrucción del gráfico",
+        "hint": "Tendencia"
+      },
+      "action": {
+        "settings": "Abrir configuración"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Integración en la tarjeta de la transacción",
+        "description": "Demostración."
+      },
+      "action": "Mezclar"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Estado del backend",
+      "description": {
+        "healthy": "El backend está saludable ({msg})",
+        "checking": "Comprobando el estado del backend...",
+        "error": "Error de conexión interna"
+      },
+      "action": "Actualizar estado"
+    }
+  }
+}

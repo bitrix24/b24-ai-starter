@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] アプリケーションテスト"
+      },
+      "menu": {
+        "main": "開く"
+      },
+      "message": {
+        "title": "こんにちは！",
+        "line1": "Bitrix24でのアプリケーションの動作をテストしてみましょう。"
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "アプリケーションのインストール"
+      },
+      "ui": {
+        "title": "アプリケーションのインストール"
+      },
+      "step": {
+        "init": {
+          "caption": "少々お待ちください..."
+        },
+        "demo": {
+          "caption": "例..."
+        },
+        "events": {
+          "caption": "イベント..."
+        },
+        "placement": {
+          "caption": "ウィジェット..."
+        },
+        "userFields": {
+          "caption": "Uf..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "サーバーサイドスクリプト..."
+        },
+        "finish": {
+          "caption": "完了"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "アプリケーション設定",
+        "description": "アプリケーション設定の操作例。"
+      },
+      "actions": {
+        "save": "保存",
+        "cancel": "キャンセル"
+      },
+      "error": {
+        "title": "エラー",
+        "notAdmin": "アプリケーション設定を編集できるのは管理者のみです。"
+      },
+      "option": {
+        "history": {
+          "title": "操作履歴",
+          "alert": "プロパティの操作デモンストレーション。同様の方法で任意のアプリケーションプロパティを設定できます。",
+          "property_1": "履歴を保持する日数",
+          "property_2": "イベントタイトル",
+          "property_bool": "上昇トレンド？"
+        },
+        "present": {
+          "title": "イベントログ",
+          "alert": "従業員のログインはすべてイベントログに表示されます。誰が、いつ、どのIPアドレスからBitrix24にログインしたかを常に確認できます。"
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "プロパティの操作デモンストレーション。",
+        "description": "同様の方法で任意のアプリケーションプロパティを設定できます"
+      },
+      "field": {
+        "label": "フィールド例",
+        "description": "値の変更はグラフの再構築を引き起こします",
+        "hint": "トレンド"
+      },
+      "action": {
+        "settings": "設定を開く"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "取引カードへの埋め込み",
+        "description": "デモンストレーション。"
+      },
+      "action": "シャッフル"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "バックエンドステータス",
+      "description": {
+        "healthy": "バックエンドは正常です ({msg})",
+        "checking": "バックエンドの稼働状態を確認中...",
+        "error": "内部接続エラー"
+      },
+      "action": "ステータスを更新"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "layout": {},
+  "page": {
+    "index": {
+      "seo": {
+        "title": "[playground] Anwendungstest"
+      },
+      "menu": {
+        "main": "Öffnen"
+      },
+      "message": {
+        "title": "Hallo!",
+        "line1": "Lassen Sie uns die Anwendung in Bitrix24 testen."
+      }
+    },
+    "install": {
+      "seo": {
+        "title": "Anwendungsinstallation"
+      },
+      "ui": {
+        "title": "Anwendungsinstallation"
+      },
+      "step": {
+        "init": {
+          "caption": "Bitte warten Sie einen Moment..."
+        },
+        "demo": {
+          "caption": "Beispiele..."
+        },
+        "events": {
+          "caption": "Ereignisse..."
+        },
+        "placement": {
+          "caption": "Widgets..."
+        },
+        "userFields": {
+          "caption": "Benutzerfelder..."
+        },
+        "crm": {
+          "caption": "CRM..."
+        },
+        "serverSide": {
+          "caption": "Serverseitige Skripte..."
+        },
+        "finish": {
+          "caption": "Abschluss"
+        }
+      }
+    },
+    "app-options": {
+      "seo": {
+        "title": "Anwendungseinstellungen",
+        "description": "Beispiel für die Arbeit mit Anwendungseinstellungen."
+      },
+      "actions": {
+        "save": "Speichern",
+        "cancel": "Abbrechen"
+      },
+      "error": {
+        "title": "Fehler",
+        "notAdmin": "Nur der Administrator kann die Anwendungseinstellungen bearbeiten."
+      },
+      "option": {
+        "history": {
+          "title": "Vorgangshistorie",
+          "alert": "Demonstration der Arbeit mit der Eigenschaft. Analog können beliebige Anwendungseigenschaften konfiguriert werden.",
+          "property_1": "Wie viele Tage soll der Verlauf aufbewahrt werden",
+          "property_2": "Ereignisüberschrift",
+          "property_bool": "Aufwärtstrend?"
+        },
+        "present": {
+          "title": "Ereignisprotokoll",
+          "alert": "Jeder Login von Mitarbeitern wird im Ereignisprotokoll angezeigt. Sie können jederzeit überprüfen, wer, wann und von welcher IP-Adresse sich bei Bitrix24 angemeldet hat."
+        }
+      }
+    }
+  },
+  "uf": {
+    "demo": {
+      "alert": {
+        "title": "Demonstration der Arbeit mit der Eigenschaft.",
+        "description": "Analog können beliebige Anwendungseigenschaften konfiguriert werden"
+      },
+      "field": {
+        "label": "Beispielfeld",
+        "description": "Das Ändern des Werts führt zur Neuerstellung des Diagramms",
+        "hint": "Trend"
+      },
+      "action": {
+        "settings": "Einstellungen öffnen"
+      }
+    }
+  },
+  "placement": {
+    "crm_deal_detail_tab": {
+      "seo": {
+        "title": "Einbettung in die Deal-Karte",
+        "description": "Demonstration."
+      },
+      "action": "Mischen"
+    }
+  },
+  "components": {
+    "backendStatus": {
+      "title": "Backend-Status",
+      "description": {
+        "healthy": "Backend ist gesund ({msg})",
+        "checking": "Backend-Status wird überprüft...",
+        "error": "Interner Verbindungsfehler"
+      },
+      "action": "Status aktualisieren"
+    }
+  }
+}
