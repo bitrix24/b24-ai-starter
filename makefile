@@ -53,6 +53,7 @@ help: ## Show this help message
 	@echo ""
 	@echo "🛡  Security:"
 	@echo "  security-scan     Run dependency vulnerability audit"
+	@echo "  security-tests    Run orchestrated security test suite"
 	@echo ""
 	@echo "💡 Quick start: make dev-init"
 	@echo ""
@@ -144,6 +145,10 @@ lint-cs-fixer-fix:
 .PHONY: security-scan
 security-scan:
 	@./scripts/security-scan.sh
+
+.PHONY: security-tests
+security-tests:
+	@./scripts/security-tests.sh $(SECURITY_TESTS_ARGS)
 
 # Doctrine/Symfony database commands
 
