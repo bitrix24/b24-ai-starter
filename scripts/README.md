@@ -7,6 +7,7 @@ This directory packages every helper needed to bootstrap and maintain the Bitrix
 | Script | Purpose | Command |
 |--------|---------|---------|
 | `dev-init.sh` | 🚀 Full project initialization | `make dev-init` |
+| `security-tests.sh` | 🛡 Orchestrated security test suite | `make security-tests` |
 | `fix-php.sh` | 🔧 Repair PHP dependencies | `make fix-php` |
 | `test-ngrok.sh` | 🧪 Ngrok smoke test | `./scripts/test-ngrok.sh` |
 
@@ -70,6 +71,44 @@ make dev-init
 #### 🚀 Result
 
 `make dev-init` now provisions the Ngrok tunnel deterministically and restarts the stack with the detected domain automatically.
+
+---
+
+## 🛡 security-tests.sh — orchestrated security checks
+
+This script runs a unified security test suite for the active parts of the project (frontend + chosen backend) inside Docker containers.
+
+### ⚙ Features
+1. **Profiles**:
+   - `quick` — dependency audit + Semgrep OWASP Top 10
+   - `full` — quick profile plus static analyzers, Gitleaks and Trivy
+   - `custom` — interactive selection of steps
+2. **Stack auto-detection**: after `make dev-init` only the selected backend remains, and the script figures out what to scan.
+3. **Docker isolation**: every command runs inside its service (`php-cli`, `api-python`, `api-node`, `frontend`), so no host tooling is required.
+4. **Reports**: JSON/log files are stored in `reports/security/<timestamp>/`.
+5. **Friendly warnings**: in interactive runs vulnerabilities are shown as warnings (the script keeps going); in `--ci` mode the same exit code is treated as an error.
+6. **CI mode**: `--ci` automatically enables the `full` profile and disables questions.
+
+### 🔍 What runs
+- **Dependency audit**: `composer audit`, `pip-audit`, `pnpm audit` (backend + frontend)
+- **Static analysis**: `phpstan`, `bandit`, `eslint` (node/backend + frontend)
+- **Semgrep**: `p/owasp-top-ten` ruleset
+- **Secret scanning**: `gitleaks` (Docker image)
+- **Filesystem scan**: `trivy fs` (Docker image)
+
+### 💻 Usage
+```bash
+# Quick mode (default)
+make security-tests
+
+# Full profile without failing on findings
+make security-tests SECURITY_TESTS_ARGS="--profile full --allow-fail"
+
+# CI mode
+./scripts/security-tests.sh --ci --profile full
+```
+
+Interactive runs show a profile menu and, for the `custom` profile, confirmations for each test category.
 
 ---
 

@@ -190,6 +190,29 @@ Configure these variables before going live:
 - Non-zero exit when vulnerabilities are detected. Override via `SECURITY_SCAN_ALLOW_FAILURES=1 make security-scan` or `./scripts/security-scan.sh --allow-fail`.
 - Nothing runs automatically; add the command to local checklists or CI manually.
 
+## 🛡️ Security Checks
+
+### security-tests.sh orchestrator
+
+- `make security-tests` runs `scripts/security-tests.sh`, launching dependency audits, static analyzers and generic scanners (Semgrep OWASP Top 10, Gitleaks, Trivy) inside Docker.
+- The script auto-detects active backend (PHP/Python/Node) and the frontend, so no manual selection is required.
+- Profiles:
+  - `quick` (default) — dependency audit + Semgrep.
+  - `full` — quick profile plus phpstan/bandit/eslint, Gitleaks and Trivy.
+  - `custom` — interactive step selection.
+- In interactive mode findings are reported as warnings so newcomers see results without stopping the flow; in `--ci` mode the same steps fail the run.
+- Reports are placed in `reports/security/<timestamp>/...`. Strict CI mode is enabled via `--ci`, and `--allow-fail` lets the script exit with 0 even if steps fail.
+- You can pass parameters via make: `make security-tests SECURITY_TESTS_ARGS="--profile full --allow-fail"`.
+
+### Quick dependency audit
+
+- Run `make security-scan` to execute `scripts/security-scan.sh`.
+- The script runs `composer audit --locked --format=json` inside the `php-cli` container if `backends/php` exists.
+- For the frontend it executes `pnpm audit --prod --json` in the `frontend` container.
+- JSON reports go to `reports/security/php-composer.json` and `reports/security/frontend-pnpm.json`.
+- By default the script exits with a non-zero code when vulnerabilities are found; enable “soft mode” with `SECURITY_SCAN_ALLOW_FAILURES=1 make security-scan` (or `./scripts/security-scan.sh --allow-fail`) to always exit with 0.
+- The command runs on demand, so you can add it to local release checklists or call it in CI manually.
+
 ## 🐇 Queues & RabbitMQ
 
 - `make dev-init` can automatically enable RabbitMQ and store credentials in `.env`.
